@@ -23,6 +23,8 @@
 		maxZoom: 18
 	});
 
+	L.control.scale().addTo(map);
+
 	// Create basemaps
 
 	osmLayer = L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
