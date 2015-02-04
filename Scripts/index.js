@@ -10,6 +10,7 @@
 	function createThunderforestTileLayer(name) {
 		return L.tileLayer('http://{s}.tile.thunderforest.com/' + name + '/{z}/{x}/{y}.png', {
 			attribution: 'Maps © <a href="http://www.thunderforest.com/">Thunderforest</a>, Data © <a href="//openstreetmap.org">OpenStreetMap</a> contributors',
+			detectRetina: true,
 			subdomains: ['a', 'b', 'c'],
 		});
 	}
@@ -26,6 +27,7 @@
 
 	osmLayer = L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: 'Map data &copy; <a href="//openstreetmap.org">OpenStreetMap</a> contributors, <a href="//creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+		detectRetina: true
 	}).addTo(map);
 	landscapeLayer = createThunderforestTileLayer("landscape");
 	openCycleMapLayer = createThunderforestTileLayer("cycle");
