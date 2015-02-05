@@ -6,6 +6,7 @@
 	/**
 	 * Creates a TileLayer using tiles from thunderforest.com.
 	 * @param {string} name - The name of the layer. This is part of the URL.
+	 * @returns {L.TileLayer}
 	 */
 	function createThunderforestTileLayer(name) {
 		return L.tileLayer('http://{s}.tile.thunderforest.com/' + name + '/{z}/{x}/{y}.png', {
@@ -61,6 +62,7 @@
 			if (error) {
 				console.error(error);
 			} else {
+				L.marker(e.latlng).addTo(map).bindPopup(identifyImageResponse.pixel.properties.value).openPopup();
 				console.debug({
 					identifyImageRespnose: identifyImageResponse,
 					rawResponse: rawResponse
