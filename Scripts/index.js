@@ -36,7 +36,7 @@
 	openCycleMapLayer = createThunderforestTileLayer("cycle");
 	transportLayer = createThunderforestTileLayer("transport");
 	outdoorsLayer = createThunderforestTileLayer("outdoors");
-	transportDarkLayer = createThunderforestTileLayer("outdoors-dark");
+	transportDarkLayer = createThunderforestTileLayer("transport-dark");
 
 	// Create overlays
 
