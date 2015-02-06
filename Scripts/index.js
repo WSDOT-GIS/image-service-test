@@ -62,7 +62,13 @@
 			if (error) {
 				console.error(error);
 			} else {
-				L.marker(e.latlng).addTo(map).bindPopup(identifyImageResponse.pixel.properties.value).openPopup();
+				L.marker(e.latlng, {
+					icon: L.divIcon({
+						html: identifyImageResponse.pixel.properties.value,
+						className: "elevation-div-icon",
+						iconSize: [30, 13]
+					})
+				}).addTo(map).bindPopup(identifyImageResponse.pixel.properties.value);
 				console.debug({
 					identifyImageRespnose: identifyImageResponse,
 					rawResponse: rawResponse

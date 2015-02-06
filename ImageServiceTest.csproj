@@ -44,7 +44,18 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="Scripts\index.js" />
+    <Content Include="Scripts\index.min.js">
+      <DependentUpon>index.js</DependentUpon>
+    </Content>
     <Content Include="Style\index.css" />
+    <Content Include="Style\index.min.css">
+      <DependentUpon>index.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\index.min.js.map">
+      <DependentUpon>index.min.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
