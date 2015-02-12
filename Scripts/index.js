@@ -107,34 +107,12 @@
 		"Airport Surfaces": imgLayer
 	}).addTo(map);
 
-
-	/**
-	 * Starts the query
-	 * @param {L.MouseEvent} e
-	 */
-	function beginQuery(e) {
-
-		var heightPromise = new Promise(function (resolve, reject) {
-			L.esri.Tasks.identifyImage({
-				url: imgSvcUrl
-			}).at(e.latlng).run(function (error, identifyImageResponse, rawResponse) {
-				if (error) {
-					reject(error);
-				} else {
-					resolve({
-						latlng: e.latlng,
-						identifyImageResponse: identifyImageResponse,
-						rawResponse: rawResponse
-					});
-				}
-			});
-		});
-
-		var elevationPromise = new Promise(function (resolve, reject) {
+	function createElevationPromise(latlng) {
+		return new Promise(function (resolve, reject) {
 			var baseUrl = "http://ned.usgs.gov/epqs/pqs.php";
 			var params = {
-				x: e.latlng.lng,
-				y: e.latlng.lat,
+				x: latlng.lng,
+				y: latlng.lat,
 				units: "Feet",
 				output: "json"
 			};
@@ -162,6 +140,35 @@
 			};
 			request.send();
 		});
+	}
+
+	function createIdentifyPromise(imgSvcUrl, latlng) {
+		return new Promise(function (resolve, reject) {
+			L.esri.Tasks.identifyImage({
+				url: imgSvcUrl
+			}).at(latlng).run(function (error, identifyImageResponse, rawResponse) {
+				if (error) {
+					reject(error);
+				} else {
+					resolve({
+						latlng: latlng,
+						identifyImageResponse: identifyImageResponse,
+						rawResponse: rawResponse
+					});
+				}
+			});
+		});
+	}
+
+
+	/**
+	 * Starts the query
+	 * @param {L.MouseEvent} e
+	 */
+	function beginQuery(e) {
+
+		var heightPromise = createIdentifyPromise(imgSvcUrl, e.latlng);
+		var elevationPromise = createElevationPromise(e.latlng);
 
 		Promise.all([heightPromise, elevationPromise]).then(function (responses) {
 			var heightResponse = responses[0];
