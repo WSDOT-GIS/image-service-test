@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="745.66791"
+   height="618.2489"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="drawing.svg"
+   inkscape:export-filename="C:\Users\jacobsj\Documents\Subversion\AirspaceCalculator\drawing.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend"
+       style="overflow:visible">
+      <path
+         id="path3791"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.90178079"
+     inkscape:cx="373.55739"
+     inkscape:cy="437.13007"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="1138"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="2.8">
+    <sodipodi:guide
+       orientation="1,0"
+       position="745.66792,145.68332"
+       id="guide4995" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1.5101522,-345.06223)">
+    <rect
+       style="color:#000000;fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.13771909;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2993"
+       width="745.16791"
+       height="83.236229"
+       x="-1.0101526"
+       y="880.013" />
+    <path
+       style="fill:#cfb55e;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 744.15777,831.04085 c -6.76981,0.71765 -13.03452,-9.05728 -25.93931,-5.96302 -9.18754,15.13708 -24.97813,6.37109 -37.37564,1.01015 -7.5639,-7.49673 -26.04677,-2.276 -31.60238,-4.76101 -13.4387,-4.06386 -28.032,2.64014 -41.19958,-1.46208 -8.30745,-5.89193 -20.83771,-0.58385 -30.71135,-4.17205 -8.20895,-9.43582 -26.65456,3.81361 -40.83599,-3.70115 -3.42349,-11.81953 -26.74638,-12.09259 -31.41725,1.97446 -13.64749,-6.00709 -23.66751,-25.55913 -35.35534,-4.04061 -5.17731,12.32859 -17.45236,15.8956 -29.76304,14.14214 -15.17323,2.10381 -25.6574,-4.34826 -39.03234,-7.09792 -15.11715,0.0571 -30.23458,0.0134 -45.35185,0.0269 -7.24567,-6.96909 -14.2808,-15.07802 -26.73259,-12.12183 -15.72392,1.92349 -31.29716,-3.11302 -40.94763,-16.16244 -12.90221,-6.14623 -14.11449,26.75915 -23.23351,34.34518 -14.06769,18.79357 -32.47551,9.08156 -49.49748,8.08123 -12.05699,-6.57906 -24.33019,-9.51298 -38.31289,-8.08123 -14.06923,-1.08857 -29.75684,3.02394 -42.14236,-4.29772 -12.91013,-13.06145 -40.0047,-7.79574 -54.905189,1.26727 C 60.984087,831.91843 58.34332,792.641 46.467017,821.03727 33.157667,832.47014 0.42346882,856.39261 0.42346882,856.39261 L 0.13230208,881.94486 744.15777,880.27669 c 0,0 0,-33.63068 0,-49.23579 z"
+       id="path2995"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccccccccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="m 380.82751,882.65655 0,-536.391"
+       id="path3765"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4395"
+       sodipodi:cx="380.82751"
+       sodipodi:cy="494.75797"
+       sodipodi:rx="4.0406103"
+       sodipodi:ry="4.0406103"
+       d="m 384.86812,494.75797 c 0,2.23156 -1.80904,4.04061 -4.04061,4.04061 -2.23156,0 -4.04061,-1.80905 -4.04061,-4.04061 0,-2.23157 1.80905,-4.04062 4.04061,-4.04062 2.23157,0 4.04061,1.80905 4.04061,4.04062 z" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="399.2579"
+       y="501.82904"
+       id="text4397"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4399"
+         x="399.2579"
+         y="501.82904">AGL</tspan><tspan
+         sodipodi:role="line"
+         x="399.2579"
+         y="521.82904"
+         id="tspan4401" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -1.0101522,756.38749 744.48243,432.12852"
+       id="path4403"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="57.578693"
+       y="869.5246"
+       id="text4405"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4407"
+         x="57.578693"
+         y="869.5246">Terrain</tspan></text>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path4395"
+       id="use4409"
+       transform="translate(0,94.954339)"
+       width="744.09448"
+       height="1052.3622" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="454.55487"
+       y="704.15076"
+       id="text4411"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="454.55487"
+         y="704.15076"
+         id="tspan3018">Distance from surface (sd = pz - tz)</tspan><tspan
+         sodipodi:role="line"
+         x="454.55487"
+         y="724.15076"
+         id="tspan3012" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 371.73614,493.74783 -24.24366,0 0,96.97464 25.25381,0"
+       id="path4421"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 347.49248,543.2453 -22.22336,0 0,1.01015"
+       id="path4423"
+       inkscape:connector-curvature="0" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path4395"
+       id="use4425"
+       transform="translate(0,322.23866)"
+       width="744.09448"
+       height="1052.3622" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="324.16565"
+       y="773.24127"
+       id="text4429"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="324.16565"
+         y="773.24127"
+         id="tspan4433">Terrain elevation (tz)</tspan></text>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path4395"
+       id="use4998"
+       transform="translate(0,388)"
+       width="744.09448"
+       height="1052.3622" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="M 399.01026,923.06266 380.82751,881.6464"
+       id="path4437"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="404.06104"
+       y="933.16418"
+       id="text4621"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="404.06104"
+         y="933.16418"
+         id="tspan4625">Z = 0</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="m 328.64593,766.39024 54.20188,49.59625"
+       id="path4811"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="321.0563"
+       y="547.80499"
+       id="text5043"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5045"
+         x="321.0563"
+         y="547.80499">Penetration of surface</tspan><tspan
+         sodipodi:role="line"
+         x="321.0563"
+         y="567.80499"
+         id="tspan3022">sp = AGL - sd</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 382.57635,588.8349 35.48534,0 0,226.21906 -35.48534,0"
+       id="path5092"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 419.17061,697.50876 32.15859,0"
+       id="path5094"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="450.22028"
+       y="597.70624"
+       id="text3014"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3016"
+         x="450.22028"
+         y="597.70624">Penetration elevation (pz)</tspan></text>
+  </g>
+</svg>

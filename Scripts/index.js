@@ -64,7 +64,7 @@
 			} else {
 				L.marker(e.latlng, {
 					icon: L.divIcon({
-						html: identifyImageResponse.pixel.properties.value,
+						html: String(identifyImageResponse.pixel.properties.value) + "&prime;",
 						className: "elevation-div-icon",
 						iconSize: [30, 13]
 					})
