@@ -3,6 +3,23 @@
 	"use strict";
 	var map, imgSvcUrl, osmLayer, imgLayer;
 
+	function SurfacePenetrationInfo(agl, surfaceElevation, terrainElevation) {
+		if (typeof surfaceElevation === "string") {
+			if (surfaceElevation === "NoData") {
+				throw new Error("Surface elevation has no data.");
+			} else {
+				surfaceElevation = parseFloat(surfaceElevation);
+			}
+		}
+
+		this.distanceFromSurface = surfaceElevation - terrainElevation;
+		this.penetrationOfSurface = agl - this.distanceFromSurface;
+		this.agl = agl;
+		this.surfaceElevation = surfaceElevation;
+		this.terrainElevation = terrainElevation;
+		this.penetratesSurface = this.distanceFromSurface > 0;
+	}
+
 	/**
 	 * Creates a TileLayer using tiles from thunderforest.com.
 	 * @param {string} name - The name of the layer. This is part of the URL.
