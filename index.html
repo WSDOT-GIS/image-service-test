@@ -8,7 +8,12 @@
     <link href="Style/index.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="map"></div>
+    <div id="map">
+    </div>
+    <div id="aglControl">
+        <label for="aglBox"><abbr title="Height above ground level (feet)">AGL</abbr></label>
+        <input id="aglBox" type="number" placeholder="Enter height above ground in feet" autofocus />
+    </div>
     <script>
         // Load traceur if Promise is unsupported by browser.
         (function () {

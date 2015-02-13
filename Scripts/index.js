@@ -3,6 +3,12 @@
 	"use strict";
 	var map, imgSvcUrl, osmLayer, imgLayer;
 
+	/**
+	 * Provides information about surface penetration.
+	 * @param {number} agl
+	 * @param {number} surfaceElevation
+	 * @param {number} terrainElevation
+	 */
 	function SurfacePenetrationInfo(agl, surfaceElevation, terrainElevation) {
 		if (typeof surfaceElevation === "string") {
 			if (surfaceElevation === "NoData") {
@@ -17,8 +23,15 @@
 		this.agl = agl;
 		this.surfaceElevation = surfaceElevation;
 		this.terrainElevation = terrainElevation;
-		this.penetratesSurface = this.distanceFromSurface > 0;
 	}
+
+	/**
+	 * Indicates if a surface has been penetrated.
+	 * @returns {Boolean}
+	 */
+	SurfacePenetrationInfo.prototype.penetratesSurface = function () {
+		return this.penetrationOfSurface > 0;
+	};
 
 	/**
 	 * Creates a TileLayer using tiles from thunderforest.com.
@@ -51,44 +64,46 @@
 	/**
 	 * Adds a marker to the map
 	 * @param {LatLng} latlng
-	 * @param {object} identifyImageResponse
-	 * @param {number} elevation
+	 * @param {SurfacePenetrationInfo} surfacePenetrationInfo
 	 * @returns {L.Marker}
 	 */
-	function addMarkerToMap(latlng, identifyImageResponse, elevation) {
+	function addMarkerToMap(latlng, surfacePenetrationInfo) {
 		/**
 		 * Creates a definition list
 		 * @returns {HTMLDListElement}
 		 */
-		function createDl() {
-			var dl = document.createElement("dl"), dt, dd;
+		function createDl(info) {
+			var dl;
 
-			dt = document.createElement("dt");
-			dt.textContent = "Pixel value";
-			dl.appendChild(dt);
+			function addItem(name, value) {
+				var dt, dd;
+				dt = document.createElement("dt");
+				dt.textContent = name;
+				dl.appendChild(dt);
 
-			dd = document.createElement("dd");
-			dd.textContent = identifyImageResponse.pixel.properties.value;
-			dl.appendChild(dd);
+				dd = document.createElement("dd");
+				dd.textContent = value;
+				dl.appendChild(dd);
+			}
 
-			dt = document.createElement("dt");
-			dt.textContent = "Elevation";
-			dl.appendChild(dt);
-
-			dd = document.createElement("dd");
-			dd.textContent = elevation;
-			dl.appendChild(dd);
+			dl = document.createElement("dl");
+			addItem("Penetrates Surface", info.penetratesSurface() ? "Yes" : "No");
+			addItem("Distance from Surface", info.distanceFromSurface +  "′");
+			addItem("Penetration of Surface", info.penetrationOfSurface + "′");
+			addItem("AGL", info.agl + "′");
+			addItem("Surface Elev.", info.surfaceElevation + "′");
+			addItem("Terrain Elev.", info.terrainElevation + "′");
 			
 			return dl;
 		}
 
 		return L.marker(latlng, {
 			icon: L.divIcon({
-				html: String(identifyImageResponse.pixel.properties.value) + "&prime;",
-				className: "elevation-div-icon",
+				html: surfacePenetrationInfo.surfaceElevation,
+				className: surfacePenetrationInfo.penetratesSurface() ? "elevation-div-icon penetrates-surface" : "elevation-div-icon",
 				iconSize: [30, 13]
 			})
-		}).addTo(map).bindPopup(createDl());
+		}).addTo(map).bindPopup(createDl(surfacePenetrationInfo));
 	}
 
 	imgSvcUrl = "http://hqolymgis99t/arcgis/rest/services/Airport/AirportRasterTest/ImageServer";
@@ -184,17 +199,30 @@
 	 */
 	function beginQuery(e) {
 
-		var heightPromise = createIdentifyPromise(imgSvcUrl, e.latlng);
-		var elevationPromise = createElevationPromise(e.latlng);
+		var heightPromise, elevationPromise;
+		var aglBox = document.getElementById("aglBox");
+		var agl = aglBox.value;
+		if (agl) {
+			agl = parseInt(agl, 10);
+		}
+		if (agl > 0) {
+			heightPromise = createIdentifyPromise(imgSvcUrl, e.latlng);
+			elevationPromise = createElevationPromise(e.latlng);
 
-		Promise.all([heightPromise, elevationPromise]).then(function (responses) {
-			var heightResponse = responses[0];
-			var elevationResponse = responses[1];
-			console.debug("all response", arguments);
-			addMarkerToMap([elevationResponse.y, elevationResponse.x], heightResponse.identifyImageResponse, elevationResponse.Elevation).openPopup();
-		}, function (err) {
-			console.error("all error", err);
-		});
+			Promise.all([heightPromise, elevationPromise]).then(function (responses) {
+				var heightResponse = responses[0];
+				var elevationResponse = responses[1];
+				console.debug("all response", arguments);
+				var elev = elevationResponse.Elevation;
+				var height = heightResponse.identifyImageResponse.pixel.properties.value;
+				var info = new SurfacePenetrationInfo(agl, height, elev);
+				addMarkerToMap([elevationResponse.y, elevationResponse.x], info).openPopup();
+			}, function (err) {
+				console.error("all error", err);
+			});
+		} else {
+			alert("Undefined AGL");
+		}
 	}
 
 	map.on('click', beginQuery);
