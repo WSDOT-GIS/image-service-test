@@ -1,4 +1,5 @@
-﻿/*global L*/
+﻿
+/*global L*/
 (function (L) {
 	"use strict";
 	var map, imgSvcUrl, osmLayer, imgLayer;
@@ -212,7 +213,6 @@
 			Promise.all([heightPromise, elevationPromise]).then(function (responses) {
 				var heightResponse = responses[0];
 				var elevationResponse = responses[1];
-				console.debug("all response", arguments);
 				var elev = elevationResponse.Elevation;
 				var height = heightResponse.identifyImageResponse.pixel.properties.value;
 				var info = new SurfacePenetrationInfo(agl, height, elev);
