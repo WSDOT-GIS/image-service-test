@@ -127,7 +127,7 @@
 		}).addTo(map).bindPopup(createDl(surfacePenetrationInfo));
 	}
 
-	imgSvcUrl = "http://hqolymgis99t/arcgis/rest/services/Airport/AirportRasterTest/ImageServer";
+	imgSvcUrl = "http://hqolymgis99t.wsdot.loc/arcgis/rest/services/Airport/Test_obstruction_raster_int/ImageServer";
 
 	map = L.map('map', {
 		center: [47.41322033015946, -120.80566406246835],
