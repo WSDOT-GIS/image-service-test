@@ -14,18 +14,7 @@
         <label for="aglBox"><abbr title="Height above ground level (feet)">AGL</abbr></label>
         <input id="aglBox" type="number" placeholder="Enter height above ground in feet" autofocus />
     </div>
-    <script>
-        // Load traceur if Promise is unsupported by browser.
-        (function () {
-            var traceurUrl, scr;
-            if (!window.Promise) {
-                traceurUrl = "//google.github.io/traceur-compiler/bin/traceur.js"
-                scr = document.createElement("script");
-                scr.src = traceurUrl;
-                document.body.appendChild(scr);
-            }
-        }());
-    </script>
+    <script src="Scripts/Polyfills/promise-6.1.0.min.js"></script>
     <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <script src="//cdn-geoweb.s3.amazonaws.com/esri-leaflet/1.0.0-rc.5/esri-leaflet.js"></script>
     <script src="Scripts/index.min.js"></script>

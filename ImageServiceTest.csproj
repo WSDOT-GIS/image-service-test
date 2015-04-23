@@ -47,6 +47,10 @@
     <Content Include="Scripts\index.min.js">
       <DependentUpon>index.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\Polyfills\promise-6.1.0.js" />
+    <Content Include="Scripts\Polyfills\promise-6.1.0.min.js">
+      <DependentUpon>promise-6.1.0.js</DependentUpon>
+    </Content>
     <Content Include="Style\index.css" />
     <Content Include="Style\index.min.css">
       <DependentUpon>index.css</DependentUpon>
@@ -55,6 +59,11 @@
   <ItemGroup>
     <Content Include="Scripts\index.min.js.map">
       <DependentUpon>index.min.js</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\Polyfills\promise-6.1.0.min.js.map">
+      <DependentUpon>promise-6.1.0.min.js</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
