@@ -127,7 +127,7 @@
 		}).addTo(map).bindPopup(createDl(surfacePenetrationInfo));
 	}
 
-	imgSvcUrl = "http://hqolymgis99t/arcgis/rest/services/Airport/Statewide_40ft_Int/ImageServer";
+	imgSvcUrl = "http://hqolymgis99t/arcgis/rest/services/Airport/Airport_Surfaces_40ft_Int/ImageServer";
 
 	map = L.map('map', {
 		center: [47.41322033015946, -120.80566406246835],
